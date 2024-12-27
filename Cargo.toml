@@ -1,0 +1,15 @@
+[package]
+name = "uranium_cli"
+version = "0.1.0"
+edition = "2021"
+default-run = "cli"
+
+[[bin]]
+name = "ucli"
+path = "bin/app"
+
+[dependencies]
+clap = { version = "4.5.23", features = ["derive"] }
+dialoguer = "0.11.0"
+indicatif = "0.17.9"
+serde = { version = "1.0.216", features = ["derive"] }
